@@ -12,7 +12,6 @@ const run = async() => {
     </div>
     `;
     fs.writeFileSync('../index.html', `${htmlContent}`)
-
 }
 
 run()
