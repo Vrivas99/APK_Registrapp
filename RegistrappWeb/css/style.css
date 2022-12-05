@@ -6,50 +6,93 @@
 
 body{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
-    background: #1D2B64;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #F8CDDA, #1D2B64);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #F8CDDA, #1D2B64); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    background-image: url("/RegistrappWeb/img/cool-background.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 80px;
+    padding: 30px;
+    background-color: rgba(185, 108, 8, 0.815);
 }
-.qr-container, .Registrapp{
-
-    justify-content: center;
+header img {
+    height: 150px;
+}
+header {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    display: flex;
     align-items: center;
+    box-shadow: 0 0 25px 0 black;
+    z-index: 1;
 }
-.qr-container {
+
+header * {
+    display: inline;
+}
+
+header li {
+    margin: 20px;
+}
+
+header li a {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+}
+header li a:hover {
+    color: rgb(253, 253, 253);
+    text-decoration: none;
+    background-color: #252525;
+    border-radius: 15px;
+}
+
+.qr-container, .gif-container {
     display: grid;
     font-family: 'Lobster', cursive;
     justify-items: center;
-    width: 90%;
     margin: auto;
-    height: 300px;
-    /* From https://css.glass */
-    background: rgba(255, 255, 255, 0.20);
+    padding: 0px;
+}
+.descarga {
+
+    background: #ffffff2c;
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(7.6px);
     -webkit-backdrop-filter: blur(7.6px);
+    height: 50vh;
+    width: 70%;
+    margin: auto auto 20px auto;
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 20% 30%; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+    "title-descarga title-descarga"
+    "gif-container qr-container"
+    ;
 }
-
-.Registrapp{
-    margin-bottom: 10vh;
-    display: grid;
-    justify-items: center;
-}
-
-.title{
+.title-descarga { 
+    justify-self: center; 
+    grid-area: title-descarga;
     font-family: 'Lobster', cursive;
-    font-size: 100px;
-    letter-spacing: 0px;
-    word-spacing: 0px;
-    color: #000000;
-    font-weight: bold;
-    text-decoration: none;
-    font-style: normal;
-    font-variant: normal;
-    text-transform: capitalize;
+    font-size:xx-large;
+    height: 50%; 
+    align-self: center;
+    
 }
-
+.gif-container { 
+    grid-area: gif-container; 
+    justify-self: center; 
+}
+.qr-container { 
+    grid-area: qr-container; 
+    justify-self: center; 
+}
 .info-containter{
 
     padding: 50px;
@@ -84,6 +127,12 @@ body{
     justify-items: center;
     margin-left: 15%;
     margin-right: 15%;
+    font-size: 20px;
+}
+
+.texto-info h3 {
+    font-family: 'Lobster', cursive;
+    font-size: px;
 }
 
 
