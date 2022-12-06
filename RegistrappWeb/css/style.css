@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-image: url("/RegistrappWeb/img/16264590_v748-toon-75.jpg");
+    background-image: url("../img/16264590_v748-toon-75.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -130,31 +130,31 @@ div.item {
 
 div.item:nth-of-type(1) {
     --offset: 1;
-    background-image: url("/RegistrappWeb/img/login.jpg");
+    background-image: url("../img/login.jpg");
     background-size: cover;
 }
 
 div.item:nth-of-type(2) {
     --offset: 2;
-    background-image: url("/RegistrappWeb/img/home.jpg");
+    background-image: url("../img/home.jpg");
     background-size: cover;
 }
 
 div.item:nth-of-type(3) {
     --offset: 3;
-    background-image: url("/RegistrappWeb/img/home2.jpg");
+    background-image: url("../img/home2.jpg");
     background-size: cover;
 }
 
 div.item:nth-of-type(4) {
     --offset: 4;
-    background-image: url("/RegistrappWeb/img/QRgen.jpg");
+    background-image: url("../img/QRgen.jpg");
     background-size: cover;
 }
 
 div.item:nth-of-type(5) {
     --offset: 5;
-    background-image: url("/RegistrappWeb/img/QRgen2.jpg");
+    background-image: url("../img/QRgen2.jpg");
     background-size: cover;
 }
 
